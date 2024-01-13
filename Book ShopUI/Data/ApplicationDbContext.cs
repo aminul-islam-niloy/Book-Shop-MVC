@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+﻿using Book_ShopUI.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace Book_ShopUI.Data
@@ -9,5 +10,19 @@ namespace Book_ShopUI.Data
             : base(options)
         {
         }
+
+        public DbSet<Book> Books { get; set; }
+        public DbSet<Genre> Generes{ get; set; }
+
+        public DbSet<ShoppingCart> ShoppingCarts { get; set; }
+        public DbSet<CartDetail> CartDetails { get; set; }
+
+        public DbSet<Order> Orders { get; set; }
+        public DbSet<OrderStatus> OrderStatuses { get; set; }
+        public DbSet<OrderDetail> OrderDetails { get; set; }
+       
+  
+
+
     }
 }

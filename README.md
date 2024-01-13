@@ -31,5 +31,11 @@ This is a web application built with ASP.NET Core MVC and Entity Framework for m
     git clone https://github.com/aminul-islam-niloy/Book-Shop-MVC.git
    ```
 
-1.Add identity in Scaffolding <br>
-2.Update database and update database link
+   Add identity in Scaffolding <br>
+   Update database and update database link
+
+2. Create Model: Book,Genere,Order,ShoppingCart,OrderDetails,CartDetails,OrderStatus etc and Link them each other
+
+   2.1 Add DbSet so that change reflect to the database <br>
+   2.2 Add-Migration Added-Tables<br>
+   2.3 Update-Database
