@@ -39,3 +39,10 @@ This is a web application built with ASP.NET Core MVC and Entity Framework for m
    2.1 Add DbSet so that change reflect to the database <br>
    2.2 Add-Migration Added-Tables<br>
    2.3 Update-Database
+
+3. Authintication and Authorization: <br>
+   3.1 assigning role to user <br>
+   3.2 Add Constans and Eenum rule<br>
+   3.3 Add DbSeed in Data and adding some role to database (admin) <br>
+   3.4 Add scope and configuree in builder.services and comment it<br>
+   3.5 Add Role Direct admin in View,LoginPartial
