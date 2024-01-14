@@ -16,7 +16,9 @@ namespace Book_ShopUI.Models
 
         public bool IsDeleted { get; set; }= false; 
 
+        //many to one
         public OrderStatus OrderStatus { get; set; }
+        //one to many
         public List<OrderDetail> OrderDetail { get; set; }
     }
 }

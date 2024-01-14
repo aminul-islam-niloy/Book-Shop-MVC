@@ -12,6 +12,7 @@ namespace Book_ShopUI.Models
         [MaxLength(50)]
         public string GenreName { get; set; }
         //one Genre can have multiple Books
+        
         // one to many relation
        public List<Book> Books { get; set; }
 

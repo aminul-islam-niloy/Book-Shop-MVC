@@ -16,6 +16,7 @@ namespace Book_ShopUI.Models
         [Required]
         public double UnitPrice { get; set; }
 
+        //many to one relation
         public Order Order { get; set; }
         public Book Book { get; set; }  
         

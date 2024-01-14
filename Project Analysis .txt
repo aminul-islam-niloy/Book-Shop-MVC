@@ -1,0 +1,37 @@
+Book Class:
+Represents a book in the BookShop.
+Connected to the Genre class through the GenreId.
+One-to-Many relationship with OrderDetail: A book can be a part of multiple orders.
+One-to-Many relationship with CartDetail: A book can be in multiple shopping carts.
+
+
+Genre Class:
+Represents a genre in the BookShop.
+One-to-Many relationship with Book: A genre can have multiple books.
+
+
+ShoppingCart Class:
+Represents a shopping cart in the BookShop.
+One-to-Many relationship with CartDetail: A shopping cart can have multiple cart details.
+
+CartDetail Class:
+Represents details of a book in a shopping cart.
+Connected to Book and ShoppingCart classes through BookId and ShoppingCartId.
+Many-to-One relationship with Book: Multiple cart details can be associated with one book.
+Many-to-One relationship with ShoppingCart: Multiple cart details can be associated with one shopping cart.
+
+
+Order Class:
+Represents an order in the BookShop.
+Connected to OrderStatus class through OrderStatusId.
+One-to-Many relationship with OrderDetail: An order can have multiple order details.
+
+OrderStatus Class:
+Represents the status of an order.
+One-to-Many relationship with Order: A status can be associated with multiple orders.
+
+OrderDetail Class:
+Represents details of a book in an order.
+Connected to Order and Book classes through OrderId and BookId.
+Many-to-One relationship with Order: Multiple order details can be associated with one order.
+Many-to-One relationship with Book: Multiple order details can be associated with one book.

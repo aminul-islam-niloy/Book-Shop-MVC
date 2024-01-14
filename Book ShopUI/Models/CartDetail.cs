@@ -13,6 +13,8 @@ namespace Book_ShopUI.Models
         public int BookId { get; set; }
         [Required]
         public int Quantity { get; set; }   
+
+        //many to one relation
         public Book Book { get; set; }
         public ShoppingCart ShoppingCart { get; set; }
 

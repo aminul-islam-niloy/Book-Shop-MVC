@@ -20,6 +20,7 @@ namespace Book_ShopUI.Models
         public int GenreId { get; set; }
         public Genre Genre { get; set; } // Book can have only one Genre
 
+        //1 to many relation
         public List<OrderDetail> OrderDetail { get; set;}
         public List<CartDetail> CartDetail { get; set; }
          
